@@ -132,4 +132,5 @@ const mode =
   "The Lydian mode is a music mode that has been used in a variety of music genres, from classical to jazz and popular music";
 ("This mode is characterized by its bright and happy sound, which is often described as being playful, joyful, and uplifting.");
 
+
 console.log(`${mode}`);
