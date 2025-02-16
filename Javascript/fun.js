@@ -1,24 +1,35 @@
-function firstNonRepeatingChar(str) {
-  // Create a frequency map
-  const frequencyMap = {};
-
-  // Populate the frequency map
-  for (let char of str) {
-    frequencyMap[char] = (frequencyMap[char] || 0) + 1;
-  }
-
-  // Find the first non-repeating character
-  for (let char of str) {
-    if (frequencyMap[char] === 1) {
-      return char;
+const fetchData = async (url) => {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
     }
+    return await response.json();
+  } catch (error) {
+    console.error("Error fetching data:", error.message);
+    return null;
+  }
+};
+
+const displayUserData = (users) => {
+  if (!users || users.length === 0) {
+    console.log("No users found.");
+    return;
   }
 
-  // If no non-repeating character is found, return null
-  return null;
-}
+  users.forEach((user) => {
+    const { name, email, address: { city } = {} } = user; // Destructuring
+    console.log(`Name: ${name}, Email: ${email}, City: ${city}`);
+  });
+};
 
-// Test cases
-console.log(firstNonRepeatingChar("swiss")); // Output: "w"
-console.log(firstNonRepeatingChar("hello")); // Output: "h"
-console.log(firstNonRepeatingChar("aabbcc")); // Output: null
+const main = async () => {
+  const apiUrl = "https://jsonplaceholder.typicode.com/users";
+  const users = await fetchData(apiUrl);
+
+  if (users) {
+    displayUserData(users);
+  }
+};
+
+main();
