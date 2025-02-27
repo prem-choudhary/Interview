@@ -1,5 +1,5 @@
 let str = "prem Chaudhary"; // remove h from 2nd  str length
-let jhola = ""; 
+let jhola = "";  
 
 for (let i = 0; i < str.length; i++) {
   if (str[i] == "h" && i == 2) {
