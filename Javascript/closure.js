@@ -19,11 +19,6 @@ function selectionSort(arr) {
 
   return arr;
 }
-
-
-
-
-
 let array1 = [5, 4, 1, 3, 0, 7, 8, 9];
 console.log(selectionSort(array1));
 
@@ -47,7 +42,3 @@ function bubbleSort(arr) {
 
 let array = [5, 4, 1, 3, 0, 7, 8, 9];
 console.log(bubbleSort(array));
- 
-
-
-
