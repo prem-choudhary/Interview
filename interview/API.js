@@ -33,6 +33,7 @@ const main = async () => {
   if (users) {
     displayUserData(users);
   }
+  
 };
 
 main();
