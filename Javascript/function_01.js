@@ -31,3 +31,5 @@ const debouncedLog = debounce(onResize, 1000); // 1000ms (1 second) delay
 
 // Attach the debounced function to the window's resize event
 // window.addEventListener("resize", debouncedLog);
+
+console.log("Hello World")
