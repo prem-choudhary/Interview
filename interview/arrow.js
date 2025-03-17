@@ -11,7 +11,7 @@ function findLargestNumber(arr) {
 console.log(findLargestNumber([1, 5, 3, 9, 2])); // Output: 9
 
 function findMissingNumber(nums) {
-    const n = nums.length;
+    const n = nums.length; 
     const expectedSum = (n * (n + 1)) / 2;
     const actualSum = nums.reduce((sum, num) => sum + num, 0);
     return expectedSum - actualSum;
