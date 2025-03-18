@@ -49,9 +49,11 @@ function remark(responseTime)
 		responseString="Could be better...";
 	if (responseTime >=0.50 && responseTime < 0.60)
 		responseString="Keep practicing!";
+
 	if (responseTime >=0.60 && responseTime < 1)
 		responseString="Have you been drinking?";
 	if (responseTime >=1)
+	
 		responseString="Did you fall asleep?";
 
 	return responseString;
