@@ -34,6 +34,7 @@ const main = async () => {
     displayUserData(users);
   }
   
+  
 };
 
 main();
