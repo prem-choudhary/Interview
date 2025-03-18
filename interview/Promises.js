@@ -30,4 +30,5 @@ async function fetchData() {
   }
 }
 
+
 fetchData();
