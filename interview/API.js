@@ -19,6 +19,7 @@ const displayUserData = (users) => {
     return;
   }
 
+
   users.forEach((user) => {
     const { name, email, address: { city } = {} } = user; // Destructuring
     console.log(`Name: ${name}, Email: ${email}, City: ${city}`);
