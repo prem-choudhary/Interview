@@ -11,7 +11,7 @@ function isPalindrome(n) {
   while (temp != 0) {
     reverse = reverse * 10 + (temp % 10);
     temp = Math.floor(temp / 10);
-    
+    console.log(temp)
   }
 
   // If reverse is equal to the original number, the
