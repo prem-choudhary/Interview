@@ -19,6 +19,7 @@ function isPalindrome(n) {
   return reverse === Math.abs(n);
 }
 
+
 let n = 12321;
 if (isPalindrome(n) === true) {
   console.log("Yes");
