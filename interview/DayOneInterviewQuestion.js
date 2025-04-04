@@ -23,6 +23,7 @@ function isPalindrome(n) {
 let n = 12321;
 if (isPalindrome(n) === true) {
   console.log("Yes");
+   
   
 } else {
   console.log("No");
