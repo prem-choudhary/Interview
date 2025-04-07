@@ -60,6 +60,7 @@ console.log("5" % 2);
 // Synchronous
 console.log("Start");
 console.log("End"); // "End" will always log after "Start"
+console.log("Middle"); // "Middle" will log after "End"
 
 // Asynchronous
 console.log("Start");
