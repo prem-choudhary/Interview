@@ -16,6 +16,7 @@ arr.forEach((button) => {
     } else {
       string += e.target.innerHTML;
       input.value = string;
+      
     }
     console.log(addEventListener);
   });
