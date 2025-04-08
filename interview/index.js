@@ -40,6 +40,7 @@ function mostFrequentCharacter(str) {
   let maxCount = 0;
 
   for (let char in charCount) {
+    
     if (charCount[char] > maxCount) {
       maxChar = char;
       maxCount = charCount[char];
