@@ -40,6 +40,7 @@ function mostFrequentCharacter(str) {
   let maxCount = 0;
 
   for (let char in charCount) {
+    
     if (charCount[char] > maxCount) {
       maxChar = char;
       maxCount = charCount[char];
@@ -60,6 +61,7 @@ console.log("5" % 2);
 // Synchronous
 console.log("Start");
 console.log("End"); // "End" will always log after "Start"
+console.log("Middle"); // "Middle" will log after "End"
 
 // Asynchronous
 console.log("Start");
