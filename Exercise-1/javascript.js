@@ -59,3 +59,12 @@ console.log(
 
 // Get the current date
 var currentDate = new Date();
+
+
+// i add a new branch this is my new branch
+var currentDay = currentDate.getDate();
+var currentMonth = currentDate.getMonth() + 1; // Months are zero-based
+var currentYear = currentDate.getFullYear();
+console.log(
+  "Current Date: " + currentDay + "/" + currentMonth + "/" + currentYear
+);
