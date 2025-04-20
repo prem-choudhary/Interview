@@ -16,6 +16,7 @@ function array_binarySearch(narray, delement) {
   } else {
     var arr1 = narray.slice(0, mposition);
     return array_binarySearch(arr1, delement);
+    
   }
 }
 
