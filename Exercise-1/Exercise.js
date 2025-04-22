@@ -18,4 +18,5 @@ Array.prototype.merge_Sort = function () {
 };
 
 var a = [34, 7, 23, 32, 5, 62];
+
 console.log(a.merge_Sort());
