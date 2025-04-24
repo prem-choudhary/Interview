@@ -25,6 +25,7 @@ function check_Palindrome(str_entry) {
   return true;
 }
 check_Palindrome("madam");
+console.log(check_Palindrome("nursesrun"));
 check_Palindrome("nursesrun");
 check_Palindrome("fox");
 
