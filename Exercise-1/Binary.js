@@ -8,6 +8,7 @@ function array_binarySearch(narray, delement) {
   } else if (narray[mposition] < delement) {
     var arr = narray.slice(mposition + 1);
     var res = array_binarySearch(arr, delement);
+    // add some code to adjust the result
     if (res === null) {
       return null;
     } else {
