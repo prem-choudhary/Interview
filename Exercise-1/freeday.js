@@ -7,6 +7,7 @@ function test_prime(n) {
     for (var x = 2; x < n; x++) {
       if (n % x === 0) {
         return false;
+        
       }
     }
     return true;
