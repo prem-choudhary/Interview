@@ -9,6 +9,7 @@ function test_prime(n) {
         return false;
         
       }
+      
     }
     return true;
   }
