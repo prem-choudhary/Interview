@@ -26,6 +26,7 @@ function check_Palindrome(str_entry) {
 }
 check_Palindrome("madam");
 console.log(check_Palindrome("nursesrun"));
+
 check_Palindrome("nursesrun");
 check_Palindrome("fox");
 
