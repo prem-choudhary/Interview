@@ -27,6 +27,7 @@
 //     count += 1;
 //     return count;
 // }
+console.log(incrementCounter()) // 1
 //  console.log(incrementCounter())
 
 function mostFrequentCharacter(str) {
