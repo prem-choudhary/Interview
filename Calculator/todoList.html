@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple To-Do List</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 20px; background-color: azure;}
+      input { padding: 5px; margin-right: 10px; }
+      button { padding: 5px 10px; cursor: pointer; }
+      ul { list-style-type: none; padding: 0; }
+      li { margin: 5px 0; }
+      .delete-btn { margin-left: 10px; color: red; cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <h2>My To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+      // Function to add a task
+      function addTask() {
+          // Get the input value
+          let taskInput = document.getElementById("taskInput");
+          let taskText = taskInput.value.trim();
+
+          // Check if input is not empty
+          if (taskText === "") {
+              alert("Please enter a task!");
+              return;
+          }
+
+          // Create a new list item
+          let li = document.createElement("li");
+          li.textContent = taskText;
+
+          // Create a delete button for the task
+          let deleteBtn = document.createElement("span");
+          deleteBtn.textContent = " [Delete]";
+          deleteBtn.className = "delete-btn";
+          deleteBtn.onclick = function() {
+              li.remove(); // Remove the task when delete is clicked
+          };
+
+          // Append delete button to the list item
+          li.appendChild(deleteBtn);
+
+          // Append the list item to the task list
+          document.getElementById("taskList").appendChild(li);
+
+          // Clear the input field
+          taskInput.value = "";
+      }
+
+      // Allow pressing Enter to add a task
+      document.getElementById("taskInput").addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+              addTask();
+          }
+      });
+    </script>
+  </body>
+</html>
