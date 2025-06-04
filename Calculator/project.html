@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Mirror</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        transition: background 0.5s ease;
+      }
+
+      .container {
+        margin-top: 100px;
+      }
+
+      .mood-buttons button {
+        margin: 10px;
+        padding: 15px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .mood-buttons button:hover {
+        transform: scale(1.1);
+      }
+
+      .happy {
+        background: #fff3cd;
+        color: #856404;
+      }
+
+      .sad {
+        background: #d1ecf1;
+        color: #0c5460;
+      }
+
+      .angry {
+        background: #f8d7da;
+        color: #721c24;
+      }
+
+      .chill {
+        background: #d6d8d9;
+        color: #1b1e21;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mood Mirror</h1>
+      <p id="mood-message">How are you feeling today?</p>
+      <div class="mood-buttons">
+        <button onclick="setMood('happy')">😊 Happy</button>
+        <button onclick="setMood('sad')">😢 Sad</button>
+        <button onclick="setMood('angry')">😠 Angry</button>
+        <button onclick="setMood('chill')">😌 Chill</button>
+      </div>
+    </div>
+
+    <script>
+      function setMood(mood) {
+        const body = document.body;
+        const message = document.getElementById('mood-message');
+
+        // Remove previous mood classes
+        body.className = '';
+
+        // Add new mood class
+        body.classList.add(mood);
+
+        // Store mood in local storage
+        localStorage.setItem('mood', mood);
+
+        // Update message
+        const messages = {
+          happy: "Yay! Keep smiling! 😊",
+          sad: "It's okay to feel sad. 💙",
+          angry: "Take a breath. You've got this. 😤",
+          chill: "Relax and take it slow. 😌"
+        };
+        message.textContent = messages[mood];
+      }
+
+      // Load mood on page load
+      window.onload = () => {
+        const savedMood = localStorage.getItem('mood');
+        if (savedMood) {
+          setMood(savedMood);
+        }
+      }
+    </script>
+  </body>
+</html>
