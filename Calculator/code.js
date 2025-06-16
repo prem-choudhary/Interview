@@ -18,6 +18,8 @@
 // }
 
 // Throttle function
+
+
 function throttle(fn, delay) {
   let lastCall = 0;
   return function (...args) {
