@@ -33,6 +33,7 @@ function throttle(fn, delay) {
 
 function logMessage() {
   console.log("Throttled:", new Date().toLocaleTimeString());
+  
 }
 
 const throttledLog = throttle(logMessage, 2000); // 2 seconds
