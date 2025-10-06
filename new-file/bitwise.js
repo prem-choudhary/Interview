@@ -14,6 +14,4 @@ if (value1 && value2) {
   console.log("Both are true");
 } else {
   console.log("At least one is false");
-
-  
 }
