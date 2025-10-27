@@ -6,7 +6,6 @@ const a = false; // 1100 in binary
 const b = false;
 console.log(a && b); // 1000 in binary (8 in decimal)
 
-//  check is values are same or not
 let value1 = true;
 let value2 = false;
 
