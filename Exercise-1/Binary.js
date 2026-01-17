@@ -1,6 +1,5 @@
 function array_binarySearch(narray, delement) {
   var mposition = Math.floor(narray.length / 2);
-
   if (narray[mposition] === delement) {
     return mposition;
   } else if (narray.length === 1) {
