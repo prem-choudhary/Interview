@@ -6,7 +6,6 @@ var yyyy = today.getFullYear();
 if (dd < 10) {
   dd = "0" + dd;
 }
-
 if (mm < 10) {
   mm = "0" + mm;
 }
