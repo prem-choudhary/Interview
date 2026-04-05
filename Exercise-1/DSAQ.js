@@ -16,7 +16,7 @@ function check_Palindrome(str_entry) {
     }
   }
   for (var x = 0; x < ccount; x++) {
-    if (cstr[x] != cstr.slice(-1 - x)[0]) {
+    if (cstr[x] != cstr.slice(-1 - x)[0]) {  
       console.log("Entry is not a palindrome.");
       return false;
     }
