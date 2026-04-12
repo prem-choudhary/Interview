@@ -50,17 +50,12 @@ if (hour === 0 && prepand === " AM ") {
     prepand = " AM";
   }
 }
-
 // Display the current time
 console.log(
   "Current Time: " + hour + prepand + " : " + minute + " : " + second
 );
-
-
 // Get the current date
 var currentDate = new Date();
-
-
 // i add a new branch this is my new branch
 var currentDay = currentDate.getDate();
 var currentMonth = currentDate.getMonth() + 1; // Months are zero-based
@@ -68,3 +63,4 @@ var currentYear = currentDate.getFullYear();
 console.log(
   "Current Date: " + currentDay + "/" + currentMonth + "/" + currentYear
 );
+  
