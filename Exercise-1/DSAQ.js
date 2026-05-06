@@ -24,7 +24,7 @@ function check_Palindrome(str_entry) {
   console.log("The entry is a palindrome.");
   return true;
 }
-check_Palindrome("madam");
+check_Palindrome("madam");  
 console.log(check_Palindrome("nursesrun"));
 
 check_Palindrome("nursesrun");

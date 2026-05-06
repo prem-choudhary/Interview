@@ -10,6 +10,6 @@ function isPrime(num) {
 // Generate prime numbers from 1 to 100
 for (let i = 1; i <= 100; i++) {
     if (isPrime(i)) {
-        console.log(i);
+        console.log("Number is prime " ,i);
     }
 }
