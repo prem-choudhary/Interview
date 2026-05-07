@@ -18,3 +18,8 @@ function findMissingNumber(nums) {
   }
   
   console.log(findMissingNumber([3, 0, 1])); // Output: 2
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello")); // Output: "olleh"
