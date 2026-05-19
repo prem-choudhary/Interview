@@ -1,4 +1,4 @@
-// const array = ["prem", 22, "pali"];
+// var array = ["prem", 22, "pali"];
 
 // let name = array[0];
 // let age = array[1];
@@ -8,25 +8,25 @@
 // console.log(age)
 // console.log(city)
 
-// const array = ['prem' , 22, "city"]
-// const Destructuring  = array
-// console.log(Destructuring )
+const array = ['prem' , 22, "city"]
+const Destructuring  = array
+console.log(Destructuring )
 
-// let a = 5
-// let b = 10
-// console.log( a + (b * 2))
+let a = 5
+let b = 10
+console.log( a + (b * 2))
 
-// let x = 5
-// let y = 10
-// console.log( x + y /2)
+let x = 5
+let y = 10
+console.log( x + y /2)
 
 // what is pure function in js
-// let count = 0;
+ let count = 0;
 
-// function incrementCounter() {
-//     count += 1;
-//     return count;
-// }
+function incrementCounter() {
+    count += 1;
+    return count;
+}
 console.log(incrementCounter()) // 1
 //  console.log(incrementCounter())
 
@@ -71,14 +71,14 @@ setTimeout(() => {
 }, 1000);
 console.log("End"); // "End" logs before the asynchronous operation
 
-async function fetchData() {
-  try {
-    let response = await fetch("https://api.example.com/data");
-    let data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
+// async function fetchData() {
+//   try {
+//     let response = await fetch("https://api.example.com/data");
+//     let data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
+// }
 
-fetchData();
+// fetchData();
