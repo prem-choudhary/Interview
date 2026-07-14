@@ -1,4 +1,4 @@
-let name = "Premnchoudhary";
+let name = "Praveen Sirvi ";
 let jhola = " ";
 
 for (let i = 0; i < name.length; i++) {
